@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ELITEFIT Gym</title>
+  <meta name="description" content="EliteFit Gym - Premium fitness experience with world-class trainers, modern equipment, and immersive classes.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Navigation -->
+  <header class="header" id="header">
+    <div class="container nav">
+      <a href="#home" class="logo" aria-label="EliteFit Home">
+        <span class="logo-mark">EF</span>
+        <span class="logo-text">EliteFit</span>
+      </a>
+      <nav class="nav-menu" aria-label="Primary">
+        <button class="nav-toggle" aria-label="Open Menu" aria-expanded="false">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </button>
+        <ul class="nav-list">
+          <li><a href="#home" class="nav-link active">Home</a></li>
+          <li><a href="#pricing" class="nav-link">Pricing</a></li>
+          <li><a href="#timetable" class="nav-link">Timetable</a></li>
+          <li><a href="#gallery" class="nav-link">Gallery</a></li>
+          <li><a href="#testimonials" class="nav-link">Testimonials</a></li>
+          <li><a href="#location" class="nav-link">Location</a></li>
+          <li><a href="#contact" class="btn btn-red">Join Now</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero" id="home" aria-label="Hero">
+    <div class="hero-media">
+      <video class="hero-video" autoplay muted loop playsinline poster="https://images.unsplash.com/photo-1517836357463-d25dfeac3438?q=80&w=1974&auto=format&fit=crop">
+        <source src="https://cdn.coverr.co/videos/coverr-man-lifting-weights-3657/1080p.mp4" type="video/mp4">
+      </video>
+      <div class="overlay"></div>
+    </div>
+    <div class="container hero-content">
+      <h1 class="hero-title"><span>Elevate</span> Your Fitness</h1>
+      <p class="hero-subtitle">Premium training. Modern equipment. Transformative results.</p>
+      <div class="hero-ctas">
+        <a href="#pricing" class="btn btn-gold">View Plans</a>
+        <a href="#contact" class="btn btn-outline">Book a Tour</a>
+      </div>
+      <div class="hero-stats">
+        <div class="stat"><span class="count" data-target="2500">0</span><span class="label">Members</span></div>
+        <div class="stat"><span class="count" data-target="35">0</span><span class="label">Trainers</span></div>
+        <div class="stat"><span class="count" data-target="120">0</span><span class="label">Classes</span></div>
+        <div class="stat"><span class="count" data-target="18">0</span><span class="label">Awards</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pricing -->
+  <section class="section pricing" id="pricing" aria-labelledby="pricing-title">
+    <div class="container">
+      <h2 id="pricing-title" class="section-title">Membership Plans</h2>
+      <p class="section-subtitle">Choose a plan that fits your journey</p>
+      <div class="pricing-grid">
+        <article class="card" aria-label="Monthly Plan">
+          <header>
+            <h3>Monthly</h3>
+            <p class="price"><span>$</span>49</p>
+          </header>
+          <ul class="features">
+            <li><i class="ri-check-line"></i> Unlimited Gym Access</li>
+            <li><i class="ri-check-line"></i> 5 Classes / Month</li>
+            <li><i class="ri-check-line"></i> Locker Access</li>
+            <li><i class="ri-close-line"></i> Personal Training</li>
+          </ul>
+          <a href="#contact" class="btn btn-red">Choose Monthly</a>
+        </article>
+        <article class="card popular" aria-label="Quarterly Plan">
+          <div class="badge">Most Popular</div>
+          <header>
+            <h3>Quarterly</h3>
+            <p class="price"><span>$</span>129</p>
+          </header>
+          <ul class="features">
+            <li><i class="ri-check-line"></i> Unlimited Gym + Classes</li>
+            <li><i class="ri-check-line"></i> Wellness Assessment</li>
+            <li><i class="ri-check-line"></i> Locker + Sauna</li>
+            <li><i class="ri-check-line"></i> 1 PT Session</li>
+          </ul>
+          <a href="#contact" class="btn btn-gold">Choose Quarterly</a>
+        </article>
+        <article class="card" aria-label="Yearly Plan">
+          <header>
+            <h3>Yearly</h3>
+            <p class="price"><span>$</span>449</p>
+          </header>
+          <ul class="features">
+            <li><i class="ri-check-line"></i> All Access + VIP Lounge</li>
+            <li><i class="ri-check-line"></i> 12 PT Sessions</li>
+            <li><i class="ri-check-line"></i> Nutrition Coaching</li>
+            <li><i class="ri-check-line"></i> Priority Booking</li>
+          </ul>
+          <a href="#contact" class="btn btn-outline">Choose Yearly</a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Timetable -->
+  <section class="section timetable" id="timetable" aria-labelledby="timetable-title">
+    <div class="container">
+      <h2 id="timetable-title" class="section-title">Weekly Schedule</h2>
+      <p class="section-subtitle">Find your class and time</p>
+      <div class="table-wrap" role="region" aria-label="Class schedule">
+        <table class="schedule">
+          <thead>
+            <tr>
+              <th>Day</th>
+              <th>Class</th>
+              <th>Time</th>
+              <th>Trainer</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Mon</td>
+              <td>HIIT</td>
+              <td>6:00 AM</td>
+              <td>Alex Carter</td>
+            </tr>
+            <tr>
+              <td>Tue</td>
+              <td>Strength</td>
+              <td>7:30 AM</td>
+              <td>Maya Stone</td>
+            </tr>
+            <tr>
+              <td>Wed</td>
+              <td>Spin</td>
+              <td>6:15 PM</td>
+              <td>Jordan Lee</td>
+            </tr>
+            <tr>
+              <td>Thu</td>
+              <td>Yoga</td>
+              <td>7:00 PM</td>
+              <td>Sofia Kim</td>
+            </tr>
+            <tr>
+              <td>Fri</td>
+              <td>CrossFit</td>
+              <td>5:30 PM</td>
+              <td>Chris Hall</td>
+            </tr>
+            <tr>
+              <td>Sat</td>
+              <td>Pilates</td>
+              <td>9:00 AM</td>
+              <td>Nina Fox</td>
+            </tr>
+            <tr>
+              <td>Sun</td>
+              <td>Restorative</td>
+              <td>11:00 AM</td>
+              <td>Ravi Patel</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- Gallery -->
+  <section class="section gallery" id="gallery" aria-labelledby="gallery-title">
+    <div class="container">
+      <h2 id="gallery-title" class="section-title">Inside EliteFit</h2>
+      <p class="section-subtitle">Spaces, equipment, energy</p>
+      <div class="gallery-grid">
+        <a href="https://images.unsplash.com/photo-1517960413843-0aee8e2b3285?q=80&w=1920&auto=format&fit=crop" class="glightbox" data-gallery="gym" aria-label="Gym interior 1">
+          <img src="https://images.unsplash.com/photo-1517960413843-0aee8e2b3285?q=80&w=800&auto=format&fit=crop" alt="Gym interior with equipment">
+        </a>
+        <a href="https://images.unsplash.com/photo-1571907480495-3c2874d3128d?q=80&w=1920&auto=format&fit=crop" class="glightbox" data-gallery="gym" aria-label="Gym interior 2">
+          <img src="https://images.unsplash.com/photo-1571907480495-3c2874d3128d?q=80&w=800&auto=format&fit=crop" alt="Dumbbells rack and mirrors">
+        </a>
+        <a href="https://images.unsplash.com/photo-1605296867304-46d5465a13f1?q=80&w=1920&auto=format&fit=crop" class="glightbox" data-gallery="gym" aria-label="Gym interior 3">
+          <img src="https://images.unsplash.com/photo-1605296867304-46d5465a13f1?q=80&w=800&auto=format&fit=crop" alt="Man lifting barbell">
+        </a>
+        <a href="https://images.unsplash.com/photo-1556817411-31ae72fa3ea0?q=80&w=1920&auto=format&fit=crop" class="glightbox" data-gallery="gym" aria-label="Gym class">
+          <img src="https://images.unsplash.com/photo-1556817411-31ae72fa3ea0?q=80&w=800&auto=format&fit=crop" alt="Group workout class">
+        </a>
+        <a href="https://images.unsplash.com/photo-1558611848-73f7eb4001a1?q=80&w=1920&auto=format&fit=crop" class="glightbox" data-gallery="gym" aria-label="Trainer">
+          <img src="https://images.unsplash.com/photo-1558611848-73f7eb4001a1?q=80&w=800&auto=format&fit=crop" alt="Personal trainer with client">
+        </a>
+        <a href="https://images.unsplash.com/photo-1571019613576-2b22c76fd955?q=80&w=1920&auto=format&fit=crop" class="glightbox" data-gallery="gym" aria-label="Equipment">
+          <img src="https://images.unsplash.com/photo-1571019613576-2b22c76fd955?q=80&w=800&auto=format&fit=crop" alt="Gym equipment close-up">
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials -->
+  <section class="section testimonials" id="testimonials" aria-labelledby="testimonials-title">
+    <div class="container">
+      <h2 id="testimonials-title" class="section-title">What Members Say</h2>
+      <p class="section-subtitle">Real stories. Real results.</p>
+      <div class="swiper testimonial-swiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide testimonial">
+            <p class="quote">“EliteFit changed my life. The trainers are elite and the vibe is unmatched.”</p>
+            <div class="author">
+              <img src="https://images.unsplash.com/photo-1544723795-3fb6469f5b39?q=80&w=256&auto=format&fit=crop" alt="Member portrait">
+              <div>
+                <strong>Emily R.</strong>
+                <span>Marketing Director</span>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide testimonial">
+            <p class="quote">“State-of-the-art equipment and classes that push me every day.”</p>
+            <div class="author">
+              <img src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?q=80&w=256&auto=format&fit=crop" alt="Member portrait">
+              <div>
+                <strong>Jason K.</strong>
+                <span>Software Engineer</span>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide testimonial">
+            <p class="quote">“The yearly plan with coaching was worth every penny. Highly recommend.”</p>
+            <div class="author">
+              <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?q=80&w=256&auto=format&fit=crop" alt="Member portrait">
+              <div>
+                <strong>Sara M.</strong>
+                <span>Entrepreneur</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Location -->
+  <section class="section location" id="location" aria-labelledby="location-title">
+    <div class="container">
+      <h2 id="location-title" class="section-title">Find Us</h2>
+      <p class="section-subtitle">Visit our flagship studio</p>
+      <div class="location-wrap">
+        <div class="map">
+          <iframe title="EliteFit Location" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3151.8867845218206!2d144.9556511772326!3d-37.81731347198117!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad65d43f30c0e2d%3A0x5045675218ce840!2sMelbourne%20VIC%2C%20Australia!5e0!3m2!1sen!2sus!4v1700000000000" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          <div class="pin" aria-hidden="true"></div>
+        </div>
+        <div class="details">
+          <h3>EliteFit Flagship</h3>
+          <p>123 King Street, Melbourne VIC</p>
+          <p><i class="ri-phone-fill"></i> +61 3 5550 1234</p>
+          <p><i class="ri-mail-fill"></i> hello@elitefit.com</p>
+          <a href="#contact" class="btn btn-red">Contact Us</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact / Newsletter -->
+  <section class="section contact" id="contact" aria-labelledby="contact-title">
+    <div class="container">
+      <h2 id="contact-title" class="section-title">Stay in the Loop</h2>
+      <p class="section-subtitle">Get offers, class drops, and more</p>
+      <form class="newsletter" autocomplete="on">
+        <label for="email" class="sr-only">Email address</label>
+        <div class="input-group">
+          <i class="ri-mail-line"></i>
+          <input id="email" name="email" type="email" placeholder="Enter your email" required>
+          <button type="submit" class="btn btn-gold">Subscribe</button>
+        </div>
+        <p class="form-note">By subscribing you agree to our Terms and Privacy Policy.</p>
+      </form>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="brand">
+        <span class="logo-mark">EF</span>
+        <span class="logo-text">EliteFit</span>
+      </div>
+      <p>© <span id="year"></span> EliteFit. All rights reserved.</p>
+      <div class="socials" aria-label="Social links">
+        <a href="#" aria-label="Instagram"><i class="ri-instagram-line"></i></a>
+        <a href="#" aria-label="TikTok"><i class="ri-tiktok-line"></i></a>
+        <a href="#" aria-label="YouTube"><i class="ri-youtube-line"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Libraries -->
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/glightbox/dist/js/glightbox.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/countup.js@2.8.0/dist/countUp.umd.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
